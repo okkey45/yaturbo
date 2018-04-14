@@ -54,7 +54,7 @@ echo '<?xml version="1.0" encoding="'.get_option('blog_charset').'"?>';
 	$item_content = preg_replace("/(<img\s(.+?)\/?>)/is", "<figure>$1</figure>", $item_content);
 ?>
 <header>
-<figure><img src="<?php the_post_thumbnail_url( 'thumb-900x450' ); ?>" /></figure>
+<figure><img src="<?php the_post_thumbnail_url( 'medium_large' ); ?>" /></figure>
 <h1><?php the_title_rss();?></h1>
 </header>
 <?php echo $item_content; ?>
